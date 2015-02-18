@@ -1,3 +1,12 @@
+body {
+  background-image: url(../css/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #F4B600;
+  font-family: "Homemade Apple", cursive;
+}
+
 h1, h3 {
   text-align: center;
 }
@@ -5,8 +14,8 @@ h1, h3 {
 #account {
   text-align: center;
   display: none;
-  background-color: #FFFFC2;
-  box-shadow: 10px 10px 5px #888888;
+  background-color: #000;
+  box-shadow: 10px 10px 5px #000;
   border: 2px solid;
   border-radius: 25px;
   padding: 15px;
@@ -15,8 +24,8 @@ h1, h3 {
 
 
 #box1, #box2 {
-  background-color: #FFFFC2;
-  box-shadow: 10px 10px 5px #888888;
+  background-color: #000;
+  box-shadow: 10px 10px 5px #000;
   border: 2px solid;
   border-radius: 25px;
   padding: 15px;
@@ -31,4 +40,16 @@ h1, h3 {
 #box2 {
   float: right;
   display: none;
+}
+
+.btn, .btn-warning {
+  color: #000;
+}
+
+.btn:hover {
+  color: red;
+}
+
+.btn-warning:hover {
+  color: red;
 }

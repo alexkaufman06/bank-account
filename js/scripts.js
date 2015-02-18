@@ -24,7 +24,7 @@ $(document).ready(function() {
     $("#box2").show();
     $("#account").show();
     $(".name").text(newAccount.name);
-    $(".balance").text(newAccount.balance);
+    $(".balance").text(newAccount.balance.toFixed(2));
 
     $("form#deposit-withdraw").submit(function(event) {
       event.preventDefault();
@@ -38,7 +38,7 @@ $(document).ready(function() {
       $("input#deposit-amount").val("");
       $("input#withdraw-amount").val("");
 
-      $(".balance").text(newAccount.balance);
+      $(".balance").text(newAccount.balance.toFixed(2));
     });
   });
 });
