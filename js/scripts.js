@@ -9,7 +9,7 @@ var BankAccount = {
 };
 
 $(document).ready(function() {
-  $("form#new-name").submit(function(event) {
+  $("form#new-account").submit(function(event) {
     event.preventDefault();
 
     var inputtedName = $("input#new-name").val();
