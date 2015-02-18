@@ -13,34 +13,33 @@
       <h1>Welcome to TheRipOffBank!</h1>
       <h1>Let's take your money!</h1>
       <div class="row">
-        <div class="col-sm-6">
+        <div id="box1" class="col-sm-5">
           <h3>Sign up for a Bank Account</h3>
           <form id="new-name">
             <div class="form-group">
               <input id="new-name" class="form-control" placeholder="Your name" type="text" required autofocus>
-              <input id="initial-deposit" class="form-control" placeholder="Initial deposit" type="number" step="any" min="0">
+              <input id="initial-deposit" class="form-control" placeholder="Initial deposit" type="number" step="any" min="0" required>
             </div>
             <button type="submit" class="btn btn-success">Create bank account</button>
           </form>
         </div>
 
-        <div class="col-sm-6">
-          <h3>Deposit or Withdraw Money</h3>
+        <div id="box2" class="col-sm-5">
+          <h3>Deposit or Withdraw <span class="name"></span>'s Money</h3>
           <form id="deposit-withdraw">
             <div class="form-group">
-              <input id="deposit-amount" class="form-control" placeholder="Deposit amount" type="text" required>
+              <input id="deposit-amount" class="form-control" placeholder="Deposit amount" type="number" step="any" min="0">
               <input id="withdraw-amount" class="form-control" placeholder="Withdraw amount" type="number" step="any" min="0">
             </div>
-            <button type="submit" class="btn btn-success">Create bank account</button>
+            <button type="submit" class="btn btn-success">Money magic!</button>
           </form>
         </div>
       </div>
 
       <div id="account" class="row">
-        <h3>Your bank account's balance:</h3>
+        <h3><span class="name"></span>'s bank account balance:</h3>
         <p>$ <span class="balance"></span></p>
       </div>
-
     </div>
   </body>
 </html>
